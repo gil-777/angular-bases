@@ -1,8 +1,18 @@
 <h4>Agregar controlador</h4>
-      <form class="row">
-        <input type="text" class="form-control mb-2" placeholder="Nombre">
-        <input type="number" class="form-control mb-2" placeholder="Cantidad">
-        <button class="btn btn-primary" type="submit">
+      <form (ngSubmit)="emitCharacter()" class="row">
+        <input type="text"
+        [(ngModel)]="character.name"
+        name="name"
+        class="form-control mb-2"
+        placeholder="Nombre">
+
+        <input type="number"
+        [(ngModel)]="character.power"
+        name="power"
+        class="form-control mb-2"
+        placeholder="Cantidad">
+        <button  class="btn btn-primary" type="submit">
           Agregar
         </button>
+        <pre>{{character | json}}</pre>
       </form>

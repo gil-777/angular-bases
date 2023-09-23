@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 import { Character } from '../../interfaces/characters.interface';
 
 @Component({
@@ -7,6 +7,7 @@ import { Character } from '../../interfaces/characters.interface';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent {
+  @Input()
   public characterList: Character[]=[{
     name: 'Fintech',
     power: 5600

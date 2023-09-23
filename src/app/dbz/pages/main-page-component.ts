@@ -13,5 +13,8 @@ export class MainPageComponent{
   },{
     name: 'SisegCard',
     power:2000
+  },{
+    name: 'OTP',
+    power: 100
   }];
 }
